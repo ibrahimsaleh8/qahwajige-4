@@ -12,7 +12,6 @@ const cairoFont = Cairo({
 });
 
 export const dynamic = "force-dynamic";
-
 export async function generateMetadata(): Promise<Metadata> {
   try {
     const data = await getProjectMetadata(CurrentProjectId);
@@ -28,6 +27,9 @@ export async function generateMetadata(): Promise<Metadata> {
       keywords,
       creator: brandName,
       publisher: brandName,
+      verification: {
+        google: "lhxo_5w_EYZuNpIpkLjXIjDsAKatMV7YORebcwAq7lY",
+      },
       openGraph: {
         title,
         description,
