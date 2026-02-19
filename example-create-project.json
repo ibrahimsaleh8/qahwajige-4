@@ -1,5 +1,5 @@
 {
-  "projectId": "qahwaji-elriyadh",
+  "projectId": "qahwaji-elriyadh-4",
   "name": "قهوجيين الرياض",
   "description": "خدمات ضيافة سعودية فاخرة بلمسة عصرية مستقبلية في الرياض",
   "isActive": true,
@@ -38,7 +38,7 @@
     "label": "من نحن",
     "title": "نحن رواد الضيافة الفاخرة في قهوجيين الرياض",
     "description1": "في قهوجيين الرياض، نؤمن بأن الضيافة فن يتجاوز تقديم المشروبات. نحن نصنع تجارب استثنائية تجمع بين الأصالة السعودية والحداثة العالمية. منذ انطلاقتنا، كرسنا جهودنا لتقديم أرقى خدمات الضيافة التي تليق بمناسباتكم الخاصة، مع اختيار أجود أنواع البن والشاي وتحضيرها بأيدي خبراء متخصصين لضمان تجربة لا تُنسى.",
-    "image": "/about.webp"
+    "image": "https://res.cloudinary.com/dg8bbwiu5/image/upload/v1771073869/uploads/ohy5xsvlla7pmylftgeb.jpg"
   },
   "servicesSection": {
     "label": "خدماتنا",
@@ -46,17 +46,22 @@
     "description": "نجمع بين الأصالة العربية والحداثة العالمية لنقدم أفضل تجربة ضيافة لكافة أنواع المناسبات والفعاليات.",
     "services": [
       {
-        "icon": "👑",
+        "icon": "Coffee",
         "title": "الضيافة الملكية",
         "description": "خدمة ضيافة فاخرة مع أجود أنواع القهوة العربية والشاي المميز لتجربة ملكية استثنائية."
       },
       {
-        "icon": "🏢",
+        "icon": "Building2",
         "title": "فعاليات الشركات",
         "description": "حلول ضيافة متكاملة للمؤتمرات والفعاليات المؤسسية باحترافية عالية."
       },
       {
-        "icon": "💎",
+        "icon": "Users",
+        "title": "المناسبات الخاصة",
+        "description": "نجعل مناسباتكم الخاصة لا تُنسى بلمسة من الفخامة والتميز."
+      },
+      {
+        "icon": "Heart",
         "title": "المناسبات الخاصة",
         "description": "نجعل مناسباتكم الخاصة لا تُنسى بلمسة من الفخامة والتميز."
       }
@@ -68,22 +73,22 @@
     "description": "نفتخر بثقة عملائنا واعتمادهم علينا في أهم مناسباتهم",
     "features": [
       {
-        "icon": "⭐",
+        "icon": "Shield",
         "title": "تقييم عملاء 99.5%",
         "description": "رضا عملائنا هو معيار نجاحنا الأول"
       },
       {
-        "icon": "✓",
+        "icon": "Clock",
         "title": "جودة مضمونة 100%",
         "description": "نلتزم بأعلى معايير الجودة في جميع خدماتنا"
       },
       {
-        "icon": "🏆",
+        "icon": "Award",
         "title": "خبرة واسعة",
         "description": "+1500 مناسبة ناجحة و5000+ عميل سعيد"
       },
       {
-        "icon": "👥",
+        "icon": "Sparkles",
         "title": "فريق محترف",
         "description": "50+ خبير ضيافة معتمد وعلى مدار الساعة"
       }
@@ -96,28 +101,28 @@
   },
   "galleryImages": [
     {
-      "url": "/gallery-coffee-1.webp",
-      "alt": "قهوة عربية فاخرة"
+      "url": "https://res.cloudinary.com/dg8bbwiu5/image/upload/v1770489622/uploads/p4uhwuz3wcspry48ejrd.jpg",
+      "alt": "خدمات قهوجيين للمناسبات الخاصة والفعاليات في الرياض"
     },
     {
-      "url": "/gallery-tea-1.webp",
-      "alt": "شاي فاخر"
+      "url": "https://res.cloudinary.com/dg8bbwiu5/image/upload/v1769771207/projects/cml0pt2jr0000rgu50g370mil/gallery/gnidbnplcjhlta1syeah.jpg",
+      "alt": "ضيافة عربية أصيلة للمناسبات الرسمية في الرياض"
     },
     {
-      "url": "/gallery-event-1.webp",
-      "alt": "مناسبة خاصة"
+      "url": "https://res.cloudinary.com/dg8bbwiu5/image/upload/v1770490555/uploads/xz7walppuykptx9fwam8.jpg",
+      "alt": "أواني القهوة العربية الفاخرة والتراثية"
     },
     {
-      "url": "/gallery-event-2.webp",
-      "alt": "فعاليات شركات"
+      "url": "https://res.cloudinary.com/dg8bbwiu5/image/upload/v1769771175/projects/cml0pt2jr0000rgu50g370mil/gallery/in3qdlnvybh3xaekpzjy.jpg",
+      "alt": "خدمة القهوة العربية الأصيلة والضيافة الفاخرة"
     },
     {
-      "url": "/gallery-coffee-2.webp",
-      "alt": "تحضير القهوة"
+      "url": "https://res.cloudinary.com/dg8bbwiu5/image/upload/v1769771166/projects/cml0pt2jr0000rgu50g370mil/gallery/pmfdjkwnzsp6q0xhha62.jpg",
+      "alt": "ضيافة فعاليات الشركات والمؤتمرات في الرياض"
     },
     {
-      "url": "/gallery-tea-2.webp",
-      "alt": "خدمة الشاي"
+      "url": "https://res.cloudinary.com/dg8bbwiu5/image/upload/v1769771144/projects/cml0pt2jr0000rgu50g370mil/gallery/fikakg7deae8cngjeosh.jpg",
+      "alt": "خدمات القهوة العربية لحفل زفاف فاخر في الرياض"
     }
   ]
 }
