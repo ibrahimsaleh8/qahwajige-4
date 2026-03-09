@@ -36,7 +36,7 @@ export default function HeroSection({
               {headline}
             </h1>
 
-            <p className="text-white/60 text-lg max-w-xl">{subheadline}</p>
+            <h2 className="text-white/60 text-lg max-w-xl">{subheadline}</h2>
 
             <div className="flex gap-4 pt-4 flex-wrap">
               <a
