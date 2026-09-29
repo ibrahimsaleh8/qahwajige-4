@@ -1,8 +1,12 @@
 // app/page.tsx
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
+import CustomSection from "@/components/CustomSection";
 import { GallerySection } from "@/components/GallerySection";
 import HeroSection from "@/components/HeroSection";
+import HomeArticlesSection, {
+  HomeArticle,
+} from "@/components/HomeArticlesSection";
 import PremiumPackagesSection from "@/components/PremiumPackagesSection";
 import RatingSection from "@/components/RatingSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -12,6 +16,7 @@ import { ProjectContentResponse } from "@/lib/responseType";
 
 export default async function HomePage() {
   let data;
+  let homeArticles: HomeArticle[] = [];
 
   try {
     const res = await fetch(
@@ -34,9 +39,21 @@ export default async function HomePage() {
         email: "",
         address: "",
       },
+      customSections: [],
     };
   }
 
+  try {
+    const articlesRes = await fetch(
+      `${APP_URL}/api/project/${CurrentProjectId}/articles/category/${encodeURIComponent("الصفحة-الرئيسية")}`,
+    );
+    if (articlesRes.ok) {
+      const articlesData = await articlesRes.json();
+      homeArticles = articlesData.data?.articles || [];
+    }
+  } catch (error) {
+    console.error("Failed to fetch home articles:", error);
+  }
   return (
     <div className="overflow-x-hidden">
       <HeroSection
@@ -54,10 +71,22 @@ export default async function HomePage() {
         whatsApp={data.hero.whatsApp}
         phone={data.footer.phone}
       />
+
       <PremiumPackagesSection
         packages={data.packages ?? []}
         whatsapp={data.hero?.whatsApp ?? ""}
       />
+
+      {data.customSections &&
+        data.customSections.length > 0 &&
+        data.customSections.map((customSection, index) => (
+          <CustomSection
+            key={customSection.id}
+            {...customSection}
+            index={index}
+          />
+        ))}
+
       <RatingSection
         projectId={CurrentProjectId}
         averageRating={data.rating?.averageRating ?? 0}
@@ -67,7 +96,11 @@ export default async function HomePage() {
       <TestimonialsSection />
 
       <GallerySection gallery={data.gallery} />
-      <ContactSection {...data.footer} whatsapp={data.hero?.whatsApp ?? ""} />
+      {data.showContactSection && (
+        <ContactSection {...data.footer} whatsapp={data.hero?.whatsApp ?? ""} />
+      )}
+
+      <HomeArticlesSection articles={homeArticles} />
     </div>
   );
 }
